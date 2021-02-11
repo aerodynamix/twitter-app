@@ -1,0 +1,418 @@
+INFO:django.utils.autoreload:C:\Users\Venkat\Desktop\twitter-app\src\usersx\views.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:C:\Users\Venkat\Desktop\twitter-app\src\usersx\views.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:C:\Users\Venkat\Desktop\twitter-app\src\usersx\models.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:C:\Users\Venkat\Desktop\twitter-app\src\usersx\views.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:C:\Users\Venkat\Desktop\twitter-app\src\usersx\views.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:C:\Users\Venkat\Desktop\twitter-app\src\usersx\views.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:C:\Users\Venkat\Desktop\twitter-app\src\usersx\views.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:C:\Users\Venkat\Desktop\twitter-app\src\usersx\views.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:C:\Users\Venkat\Desktop\twitter-app\src\usersx\views.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:C:\Users\Venkat\Desktop\twitter-app\src\usersx\views.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:C:\Users\Venkat\Desktop\twitter-app\src\usersx\views.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:C:\Users\Venkat\Desktop\twitter-app\src\usersx\views.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:C:\Users\Venkat\Desktop\twitter-app\src\usersx\views.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:C:\Users\Venkat\Desktop\twitter-app\src\usersx\views.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:C:\Users\Venkat\Desktop\twitter-app\src\usersx\views.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:C:\Users\Venkat\Desktop\twitter-app\src\usersx\urls.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:C:\Users\Venkat\Desktop\twitter-app\src\usersx\urls.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:C:\Users\Venkat\Desktop\twitter-app\src\usersx\urls.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:C:\Users\Venkat\Desktop\twitter-app\src\usersx\models.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+ERROR:django.request:Internal Server Error: /admin/usersx/user/12/change/
+Traceback (most recent call last):
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\backends\sqlite3\base.py", line 413, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: usersx_user_following
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\contrib\admin\options.py", line 614, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\contrib\admin\sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\contrib\admin\options.py", line 1656, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\contrib\admin\options.py", line 1534, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\contrib\admin\options.py", line 1597, in _changeform_view
+    form = ModelForm(instance=obj)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\forms\models.py", line 294, in __init__
+    object_data = model_to_dict(instance, opts.fields, opts.exclude)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\forms\models.py", line 94, in model_to_dict
+    data[f.name] = f.value_from_object(instance)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\models\fields\related.py", line 1667, in value_from_object
+    return [] if obj.pk is None else list(getattr(obj, self.attname).all())
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\models\query.py", line 269, in __len__
+    self._fetch_all()
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\models\query.py", line 1308, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\models\query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\models\sql\compiler.py", line 1156, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\backends\utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\backends\utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\backends\utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\backends\sqlite3\base.py", line 413, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: usersx_user_following
+ERROR:django.request:Internal Server Error: /admin/usersx/user/13/change/
+Traceback (most recent call last):
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\backends\sqlite3\base.py", line 413, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: usersx_user_following
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\contrib\admin\options.py", line 614, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\contrib\admin\sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\contrib\admin\options.py", line 1656, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\contrib\admin\options.py", line 1534, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\contrib\admin\options.py", line 1597, in _changeform_view
+    form = ModelForm(instance=obj)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\forms\models.py", line 294, in __init__
+    object_data = model_to_dict(instance, opts.fields, opts.exclude)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\forms\models.py", line 94, in model_to_dict
+    data[f.name] = f.value_from_object(instance)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\models\fields\related.py", line 1667, in value_from_object
+    return [] if obj.pk is None else list(getattr(obj, self.attname).all())
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\models\query.py", line 269, in __len__
+    self._fetch_all()
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\models\query.py", line 1308, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\models\query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\models\sql\compiler.py", line 1156, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\backends\utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\backends\utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\backends\utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\backends\sqlite3\base.py", line 413, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: usersx_user_following
+ERROR:django.request:Internal Server Error: /admin/usersx/user/13/change/
+Traceback (most recent call last):
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\backends\sqlite3\base.py", line 413, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: usersx_user_following
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\contrib\admin\options.py", line 614, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\contrib\admin\sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\contrib\admin\options.py", line 1656, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\contrib\admin\options.py", line 1534, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\contrib\admin\options.py", line 1597, in _changeform_view
+    form = ModelForm(instance=obj)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\forms\models.py", line 294, in __init__
+    object_data = model_to_dict(instance, opts.fields, opts.exclude)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\forms\models.py", line 94, in model_to_dict
+    data[f.name] = f.value_from_object(instance)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\models\fields\related.py", line 1667, in value_from_object
+    return [] if obj.pk is None else list(getattr(obj, self.attname).all())
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\models\query.py", line 269, in __len__
+    self._fetch_all()
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\models\query.py", line 1308, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\models\query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\models\sql\compiler.py", line 1156, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\backends\utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\backends\utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\backends\utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\backends\sqlite3\base.py", line 413, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: usersx_user_following
+ERROR:django.request:Internal Server Error: /admin/usersx/user/
+Traceback (most recent call last):
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\backends\sqlite3\base.py", line 413, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: usersx_user_following
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\contrib\admin\options.py", line 614, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\contrib\admin\sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\contrib\admin\options.py", line 1719, in changelist_view
+    response = self.response_action(request, queryset=cl.get_queryset(request))
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\contrib\admin\options.py", line 1402, in response_action
+    response = func(self, request, queryset)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\contrib\admin\actions.py", line 28, in delete_selected
+    deletable_objects, model_count, perms_needed, protected = modeladmin.get_deleted_objects(queryset, request)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\contrib\admin\options.py", line 1841, in get_deleted_objects
+    return get_deleted_objects(objs, request, self.admin_site)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\contrib\admin\utils.py", line 119, in get_deleted_objects
+    collector.collect(objs)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\contrib\admin\utils.py", line 182, in collect
+    return super().collect(objs, source_attr=source_attr, **kwargs)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\models\deletion.py", line 295, in collect
+    if sub_objs:
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\models\query.py", line 291, in __bool__
+    self._fetch_all()
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\models\query.py", line 1308, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\models\query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\models\sql\compiler.py", line 1156, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\backends\utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\backends\utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\backends\utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\backends\sqlite3\base.py", line 413, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: usersx_user_following
+INFO:django.utils.autoreload:C:\Users\Venkat\Desktop\twitter-app\src\usersx\models.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:C:\Users\Venkat\Desktop\twitter-app\src\usersx\models.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:django.utils.autoreload:C:\Users\Venkat\Desktop\twitter-app\src\usersx\models.py changed, reloading.
+DEBUG:asyncio:Using proactor: IocpProactor
+ERROR:django.request:Internal Server Error: /admin/usersx/user/12/change/
+Traceback (most recent call last):
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\backends\sqlite3\base.py", line 413, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: usersx_user_following
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\contrib\admin\options.py", line 614, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\contrib\admin\sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\contrib\admin\options.py", line 1656, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\contrib\admin\options.py", line 1534, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\contrib\admin\options.py", line 1597, in _changeform_view
+    form = ModelForm(instance=obj)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\forms\models.py", line 294, in __init__
+    object_data = model_to_dict(instance, opts.fields, opts.exclude)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\forms\models.py", line 94, in model_to_dict
+    data[f.name] = f.value_from_object(instance)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\models\fields\related.py", line 1667, in value_from_object
+    return [] if obj.pk is None else list(getattr(obj, self.attname).all())
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\models\query.py", line 269, in __len__
+    self._fetch_all()
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\models\query.py", line 1308, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\models\query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\models\sql\compiler.py", line 1156, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\backends\utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\backends\utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\backends\utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\backends\sqlite3\base.py", line 413, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: usersx_user_following
+ERROR:django.request:Internal Server Error: /admin/usersx/user/13/change/
+Traceback (most recent call last):
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\backends\sqlite3\base.py", line 413, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: usersx_user_following
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\contrib\admin\options.py", line 614, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\contrib\admin\sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\contrib\admin\options.py", line 1656, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\contrib\admin\options.py", line 1534, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\contrib\admin\options.py", line 1597, in _changeform_view
+    form = ModelForm(instance=obj)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\forms\models.py", line 294, in __init__
+    object_data = model_to_dict(instance, opts.fields, opts.exclude)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\forms\models.py", line 94, in model_to_dict
+    data[f.name] = f.value_from_object(instance)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\models\fields\related.py", line 1667, in value_from_object
+    return [] if obj.pk is None else list(getattr(obj, self.attname).all())
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\models\query.py", line 269, in __len__
+    self._fetch_all()
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\models\query.py", line 1308, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\models\query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\models\sql\compiler.py", line 1156, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\backends\utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\backends\utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\backends\utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Venkat\Desktop\twitter-app\lib\site-packages\django\db\backends\sqlite3\base.py", line 413, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: usersx_user_following
